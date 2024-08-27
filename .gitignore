@@ -307,3 +307,6 @@ TSWLatexianTemp*
 
 #Mac
 .DS_Store
+
+#GitHub Action stuff
+main.pdf
