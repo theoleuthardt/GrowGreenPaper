@@ -43,6 +43,8 @@
 \renewcommand{\familydefault}{\sfdefault} %%SCHRIFTART
 \usepackage{pifont}
 
+\graphicspath{ {./bilder/} }
+
 
 \usepackage{chngcntr}
 \counterwithout{figure}{chapter}
@@ -293,25 +295,16 @@
 \printnoidxglossary
 \clearpage
 
-\chapter{Einleitung}\label{sec:intro}
+\include{kapitel/einleitung}
 \pagenumbering{arabic}
 Kurz Bsp. \cite{Zen24}
-\chapter{Rahmenbedingungen}\label{sec:rahmen}
-\section{Organisatorisch}
- 
-\section{Technisch}
+\include{kapitel/rahmenbedingungen}
 
-\section{Rechtlich}
+\include{kapitel/anforderungsanalyse}
 
+\include{kapitel/software&tools}
 
-\chapter{Anforderungsanalyse}\label{sec:anforderungen}
-
-\chapter{Verwendete Software und Tools}\label{sec:technik}
-
-\clearpage
-\section{Evaluation der erreichten Ergebnisse}
-
-\chapter{Fazit und Ausblick}\label{sec:fazit}
+\include{kapitel/fazit}
 
 \clearpage
 \pagenumbering{Alph}
