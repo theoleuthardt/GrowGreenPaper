@@ -1,0 +1,77 @@
+% Befehle für Abkürzungen
+\newacronym{FU}{FU}{Freie Universität Berlin} %nur für Seiten
+\newacronym{NFC}{NFC}{Near Field Communication}
+\newacronym{ZEDAT}{ZEDAT}{Zentraleinrichtung für Datenverarbeitung (der \acrshort{FU})\protect\glsadd{glos:ZEDAT}}
+\newacronym{TRW}{TRW}{ThermoReWrite}
+\newacronym{CRUD}{CRUD}{Create, Read, Update, Delete}
+\newacronym{STW}{STW}{Studierendenwerk (Berlin)}
+\newacronym{UB}{UB}{Universitätsbibliothek}
+\newacronym{PWA}{PWA}{Progressive Web App}
+\newacronym{FUDIS}{FUDIS}{FU Directory and Identity Service}
+\newacronym{UI}{UI}{User Interface}
+\newacronym{IM}{IM}{Identity Management}
+\newacronym{SDK}{SDK}{Software Development Kit}
+%Eine Abkürzung mit Glossareintrag
+\newacronym{SSO}{SSO}{Single Sign On\protect\glsadd{glos:SSO}}
+\newacronym{API}{API}{Application Programming Interface}
+\newacronym{CIO}{CIO}{Chief Information Officer}
+\newacronym{VBB}{VBB}{Verkehrsverbund Berlin-Brandenburg}
+\newacronym{RFID}{RFID}{Radio Frequency Identification}
+\newacronym{DSGVO}{DSGVO}{Datenschutz-Grundverordnung}
+\newacronym{JSON}{JSON}{JavaScript Object Notation}
+\newacronym{HTML}{HTML}{Hypertext Markup Language}
+\newacronym{XML}{XML}{Extensible Markup Language}
+\newacronym{HRG}{HRG}{Hochschulrahmengesetz}
+\newacronym{URL}{URL}{Uniform Resource Locator}
+\newacronym{OS}{OS}{Operating System}
+\newacronym{CSS}{CSS}{Cascading Style Sheets}
+\newacronym{ERM}{ERM}{Entity-Relationship Model}
+\newacronym{DHCP}{DHCP}{Dynamic Host Configuration Protocol\protect\glsadd{glos:DHCP}}
+\newacronym{IP}{IP}{Internet Protocol}
+\newacronym{DNS}{DNS}{Domain Name System}
+\newacronym{MVC}{MVC}{Model View Controller}
+\newacronym{SI}{SI}{Server Infrastruktur}
+\newacronym{SSOT}{SSOT}{Single Source of Truth}
+\newacronym{AD}{AD}{Active Directory\protect\glsadd{glos:AD}}
+\newacronym{CSV}{CSV}{Comma-Seperated Values}
+\newacronym{IDE}{IDE}{Integrated Development Environment}
+\newacronym{MAC}{MAC}{Media Access Control}
+\newacronym{EF}{EF}{Entity Framework}
+\newacronym{CLI}{CLI}{Command Line Interface}
+\newacronym{HTTP}{HTTP}{Hyper Text Transfer Protocol}
+
+% Befehle für Glossar
+\newglossaryentry{glos:FUB-IT}{name=FUB-IT, description={Die Zentraleinrichtung FUB-IT unterstützt die Forschung, Lehre und Verwaltung der \acrshort{FU}, indem sie „leistungsstarke IT-Dienste, hochverfügbare Rechenressourcen, innovative Technologien und erstklassigen technischen Support bereitstellt“ \cite{Zen24}. Mit ihrer Gründung im April 2023 wurden die IT-Bereiche der Universität vereint, um universitätsübergreifend die passende IT serviceorientiert anzubieten.}}
+%%
+\newglossaryentry{glos:ZEDAT}{name=Zentraleinrichtung für Datenverarbeitung, description={Die \acrshort{ZEDAT} wurde am 14. Februar 1972 gegründet. Im April 2023, im Rahmen des Projekts \textit{FUtureIT}, wird sie zum Teilbereich Infrastruktur der \gls{glos:FUB-IT}.}}
+\newglossaryentry{glos:AD}{name=AD, description={\acrlong{AD} ist eine Art Datenbank für Windows Netzwerke. Der Verzeichnisdienst speichert Informationen über Benutzer und Geräte des Netzwerks. Eine \acrshort{AD}-Instanz (Domäne) wird durch Domain Controller verwaltet. Diese agieren als zentrale Authorität im Netzwerk und verwalten Richtlinien und Zugriffsrechte. \cite{Joe23}}}
+\newglossaryentry{glos:Framework}{name=Framework, description={In der Softwareentwicklung versteht man unter Framework ein wiederverwendbares Gerüst aus Softwarekomponenten, das Entwicklern dabei hilft, schneller und effizienter Anwendungen zu erstellen. Frameworks bieten vorgefertigte Bausteine die Entwickler in ihren eigenen Programmen nutzen können \cite{Ins23}.}}
+\newglossaryentry{glos:Dependency}{name=Dependency Injection, description={Als Dependency Injection bezeichnet man eine Programmiertechnik, bei der Objekte oder Klassen die Zuweisung ihrer Abhängigkeiten durch Aufruf spezifischer Methoden von einer externen Instanz erhalten \cite{Ale19}.}}
+\newglossaryentry{glos:Subnetze}{name=Subnetze, description={Mit Subnetzmasken kann ein Netz in einzelne Segmente, sogenannte Subnetze, aufgeteilt werden \cite{Hue07}. Die \acrshort{FU} verfügt über drei Klasse B-Netze.
+\begin{table}[H]
+\small	
+\begin{tabular}{c c c l}
+ &  & Netzklasse & Subnetzmaske\\ [0.8ex]
+ &  & A & 255.0.0.0 \\
+ &  & B & 255.255.0.0 \\
+ &  & C & 255.255.255.0 \\
+\end{tabular}
+\end{table}}}
+\newglossaryentry{glos:DHCP}{name=DHCP, description={Das Dynamic Host Configuration Protocol wurde 1993 entwickelt. Ein DHCP-Server vergibt dynamisch und automatisch temporär identifizierbare IP-Adressen an DHCP-Clients. Client und Server müssen sich auf das gleiche Subnetz beziehen, da die Initialisierung über einen Broadcast erfolgt. \cite{Hue07}}}
+% Befehle für Symbole
+%\newglossaryentry{symb:Pi}{
+%name=$\pi$,
+%description={Die Kreiszahl.},
+%sort=symbolpi, type=symbolslist
+%}
+%\newglossaryentry{symb:Phi}{
+%name=$\varphi$,
+%description={Ein beliebiger Winkel.},
+%sort=symbolphi, type=symbolslist
+%}
+%\newglossaryentry{symb:Lambda}{
+%name=$\lambda$,
+%description={Eine beliebige Zahl, mit der der nachfolgende Ausdruck
+%multipliziert wird.},
+%sort=symbollambda, type=symbolslist
+%}

@@ -1,0 +1,360 @@
+\documentclass[12pt, a4paper, listof=totoc, bibliography=totoc, numbers=noenddot, ngerman, headsepline, oneside]{scrbook}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{url}
+\usepackage{graphicx} 
+\usepackage{pdfpages} 
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[right]{eurosym} %Euro-Zeichen
+\usepackage{amssymb}
+\usepackage{subfig}
+\usepackage{cite} %Quellenangaben
+\usepackage{setspace} % Zeilenabstand
+\usepackage[ 
+   colorlinks,       
+   linkcolor=black,   % Farbe interner Verweise 
+   filecolor=black,   % Farbe externer Verweise 
+   citecolor=black,   % Farbe von Zitaten 
+   urlcolor=blue	  % Farbe von Links
+   ]{hyperref} %Verlinkungen
+\usepackage[figure]{hypcap}
+\usepackage[ngerman]{translator}
+\usepackage{blindtext} % Lorem-Ipsum-Plugin
+\usepackage[acronym, nonumberlist]{glossaries} %% use after hyperref %Glossar-Paket laden
+%\usepackage[
+	%nonumberlist, %keine Seitenzahlen anzeigen
+	%acronym,      %ein Abkürzungsverzeichnis erstellen
+	%toc,          %Einträge im Inhaltsverzeichnis
+	%section      %im Inhaltsverzeichnis auf section-Ebene erscheinen
+	%]
+%{glossaries}
+
+\usepackage{listings,xcolor} %Codeanzeige
+\usepackage{scrhack}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{wrapfig}
+
+\usepackage{makecell}
+\usepackage{comment}
+\renewcommand{\familydefault}{\sfdefault} %%SCHRIFTART
+\usepackage{pifont}
+
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0.337, 0.612, 0.839}
+\definecolor{dkyellow}{rgb}{204, 255, 0}
+\definecolor{lila}{rgb}{0.847, 0.624, 0.855}
+\definecolor{hintergrund}{rgb}{0.118, 0.118, 0.118}
+\definecolor{blau1}{rgb}{0.573, 0.820, 0.925}
+\definecolor{orange}{rgb}{0.839, 0.616, 0.522}
+\definecolor{psrot}{rgb}{0.66, 0.18, 0.00}
+\definecolor{psblau}{rgb}{0, 0, 0.545}
+\definecolor{psbg}{rgb}{0.9176, 0.9490, 0.9804}
+\definecolor{psbg2}{rgb}{0.949, 0.949, 0.949}
+\definecolor{psbg3}{rgb}{1.0, 0.9843, 0.9608}
+
+
+
+\lstset{
+    numbers=left, 
+    numberstyle=\tiny\color{black}, 
+    numbersep=5pt,
+    breaklines=true,
+    frame=lr,
+    escapeinside={(*@}{@*)}, %nicht anzuzeigende Ausdrücke, z.B. für Labels
+    language=[Sharp]C,
+    showstringspaces=false,
+    captionpos=b,
+    backgroundcolor=\color{hintergrund},
+    basicstyle=\ttfamily\fontsize{9}{10}\selectfont\color{white},
+    keywordstyle    = \color{dkblue},
+    stringstyle     = \color{orange},
+    identifierstyle = \color{blau1},
+    commentstyle    = \color{dkyellow},
+    emph            =[1]{var},
+    emphstyle       =[1]\color{dkblue},
+    emph            =[2]{if,and,or,else, return},
+    emphstyle       =[2]\color{lila}
+    } 
+\lstdefinestyle{cli}{
+    basicstyle=\ttfamily\fontsize{9}{10}\selectfont\color{white},
+    identifierstyle = \color{white},
+    numbers=none,
+    language=sh,
+    stringstyle=\color{dkblue},
+    emph            =[1]{dotnet},
+    emphstyle       =[1]\color{dkyellow},
+}
+\lstdefinestyle{tiny}{
+    basicstyle=\ttfamily\fontsize{7}{8}\selectfont\color{white},
+    numbers=left, 
+    numberstyle=\tiny\color{black}, 
+    numbersep=5pt,
+    breaklines=true,
+    frame=lr,
+    escapeinside={(*@}{@*)}, %nicht anzuzeigende Ausdrücke, z.B. für Labels
+    language=[Sharp]C,
+    showstringspaces=false,
+    captionpos=t,
+    backgroundcolor=\color{hintergrund},
+    keywordstyle    = \color{dkblue},
+    stringstyle     = \color{orange},
+    identifierstyle = \color{blau1},
+    commentstyle    = \color{dkyellow},
+    emph            =[1]{var},
+    emphstyle       =[1]\color{dkblue},
+    emph            =[2]{if,and,or,else, return},
+    emphstyle       =[2]\color{lila}
+}
+\lstdefinestyle{ps}{
+    numbers=left, 
+    numberstyle=\tiny\color{black}, 
+    numbersep=5pt,
+    breaklines=true,
+    frame=none,
+    escapeinside={(*@}{@*)}, %nicht anzuzeigende Ausdrücke, z.B. für Labels
+    language=sh,
+    showstringspaces=false,
+    captionpos=b,
+    backgroundcolor=\color{psbg3},
+    basicstyle=\ttfamily\fontsize{9}{10}\selectfont\color{black},
+    keywordstyle    = \color{psblau},
+    stringstyle     = \color{psrot},
+    identifierstyle = \color{psrot},
+    commentstyle    = \color{dkyellow},
+    emph            =[1]{var},
+    emphstyle       =[1]\color{dkblue},
+    emph            =[2]{if,and,or,else, return},
+    emphstyle       =[2]\color{lila}
+}
+    
+
+\renewcommand\lstlistingname{Codeausschnitt}
+\renewcommand\lstlistlistingname{Codeverzeichnis}
+
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2.3cm} 
+
+\clubpenalty = 10000 \widowpenalty = 10000 \displaywidowpenalty = 10000 
+
+\newcommand{\footfigref}[1]{\footnote{Abb. \ref{#1} auf Seite \pageref{#1}}}
+
+%% Bei Referenzen im Text wird jetzt bei allen Ebenen "Kapitel" vorgestellt, z.b. Kapitel 2, Kapitel 2.2, Kapitel 6.3.2
+\addto\extrasngerman{%
+    \def\sectionautorefname{Kapitel}%
+    \def\subsectionautorefname{Kapitel}%
+    \def\subsubsectionautorefname{Kapitel}%
+    }
+
+% Vertikaler Abstand zwischen Ende Textblock - Ende Fußzeile --> Abstand der Seitenzahl von Rand erhöhen 
+\setlength{\footskip}{10mm}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.5\baselineskip,
+    afterskip=0.5\baselineskip
+]{chapter}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.5\baselineskip,
+    afterskip=0.5\baselineskip
+]{section}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.1\baselineskip,
+    afterskip=0.1\baselineskip
+]{subsection}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.1\baselineskip,
+    afterskip=0.1\baselineskip
+]{subsubsection}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.01\baselineskip,
+    %%afterskip=0.2\baselineskip
+]{paragraph}
+
+\setlength{\abovecaptionskip}{4pt}  % 1pc=12pt 
+\setlength{\belowcaptionskip}{0pt}
+%\setlength{\textfloatsep}{4pt}
+\setlength{\intextsep}{1pc}
+
+%% Verkleinerung der Textgröße unter Abbildungen
+\addtokomafont{caption}{\small}
+
+%\include{hyphenation}
+
+\renewcommand*{\glspostdescription}{}
+
+%Glossar-Befehle anschalten
+%\makeglossaries
+ 
+\KOMAoptions{parskip=full*}
+
+% ändert Titelschriftart in Serifen-Normalschriftart
+\addtokomafont{disposition}{\rmfamily} 
+
+\makenoidxglossaries
+
+\loadglsentries{glossar.tex}
+
+\newcommand{\type}{Software Engineering I - Paper}
+\newcommand{\topic}{Grow Green}
+\newcommand{\subtopic}{eine ??? Webanwendung}
+\newcommand{\Alex}{Alexander Betke (77203378972)}
+\newcommand{\Maja}{Maja Günther (72205653284)}
+\newcommand{\Theo}{Theo Leuthardt (77205844868)}
+\newcommand{\Josh}{Josh Nicolai Tischer (77207542779)}
+\newcommand{\Domi}{Domenik Wilhelm (77207300494)}
+\newcommand{\company}{Freie Universität Berlin}
+\newcommand{\jahrgang}{2023}
+\newcommand{\fachbereich}{Duales Studium Wirtschaft · Technik}
+\newcommand{\studiengang}{Informatik}
+\newcommand{\modul}{IT2101 - Software Engineering I}
+\newcommand{\betreuerHS}{Benjamin Kretzmer}
+\newcommand{\wordCount}{2800}
+
+
+\begin{document}
+\author{}
+
+\title{
+\normalfont\endgraf\rule{\textwidth}{1pt}
+\begingroup
+	\centering
+	\linespread{1.5}
+	\huge\topic
+\endgroup
+\linespread{1.5}
+\ \\ % Falls kein Subtopic, auskommentieren
+\large\subtopic % Falls kein Subtopic, auskommentieren
+\normalfont\endgraf\rule{\textwidth}{1pt}
+}
+
+\date{\large vorgelegt am 05. November 2024}
+
+\publishers{
+	\begin{tabular}{l l}
+	\textbf{\normalsize{Modul:}} & \normalsize{\modul}  \tabularnewline
+	\textbf{\normalsize{Namen:}} & \normalsize{\Alex}  \tabularnewline
+ 	\textbf{\normalsize{}} & \normalsize{\Maja}  \tabularnewline
+   	\textbf{\normalsize{}} & \normalsize{\Theo}  \tabularnewline
+    \textbf{\normalsize{}} & \normalsize{\Josh}  \tabularnewline
+    \textbf{\normalsize{}} & \normalsize{\Domi}  \tabularnewline
+	\textbf{\normalsize{Studienjahrgang:}} & \normalsize{\jahrgang}  \tabularnewline
+	\textbf{\normalsize{Fachbereich:}} & \normalsize{\fachbereich} \tabularnewline
+	\textbf{\normalsize{Studiengang:}} & \normalsize{\studiengang} \tabularnewline
+	\textbf{\normalsize{Betreuerin Hochschule:}} & \normalsize{\betreuerHS} \tabularnewline
+    \textbf{\normalsize{Anzahl der Wörter:}} & \normalsize{\wordCount} \tabularnewline
+    \tabularnewline
+    \tabularnewline
+	\end{tabular}
+    \begin{tabular}{p{4.6em} p{0.3em} p{4.6em} p{0.3em} p{4.6em} p{0.3em} p{4.6em} p{0.3em} p{4.6em}}
+        \hspace{4.5cm} && \hspace{4.5cm} && \hspace{4.5cm} && \hspace{4.5cm} && \hspace{4.5cm}\\
+        \cline{1-1}\cline{3-3}\cline{5-5}\cline{7-7}\cline{9-9} 
+        \small{Alexander Betke} && \small{Maja Günther} && \small{Theo Leuthardt} && \small{Josh Tischer} && \small{Domenik Wilhelm}
+    \end{tabular}
+	}
+
+\titlehead{\begin{center}
+    \includegraphics[scale=0.06]{bilder/HWR.png}
+    \hfill
+    \includegraphics[scale=0.25]{bilder/FUBIT.png}
+    \end{center}
+    }
+
+\maketitle
+\onehalfspacing 
+\pagenumbering{Roman}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\clearpage
+
+\newpage
+
+\tableofcontents{}
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+
+\clearpage
+
+\addcontentsline{toc}{chapter}{Akronyme}
+\printnoidxglossary[type=\acronymtype]
+\clearpage
+
+\addcontentsline{toc}{chapter}{Glossar}
+\printnoidxglossary
+\clearpage
+
+\chapter{Einleitung}\label{sec:intro}
+\pagenumbering{arabic}
+
+\chapter{Rahmenbedingungen}\label{sec:rahmen}
+\section{Organisatorisch}
+ 
+\section{Technisch}
+
+\section{Rechtlich}
+
+
+\chapter{Anforderungsanalyse}\label{sec:anforderungen}
+
+\chapter{Verwendete Software und Tools}\label{sec:technik}
+
+\clearpage
+\section{Evaluation der erreichten Ergebnisse}
+
+\chapter{Fazit und Ausblick}\label{sec:fazit}
+
+\clearpage
+\pagenumbering{Alph}
+
+\bibliography{literatur}
+
+\bibliographystyle{hwrbib}
+
+
+\listoffigures
+\lstlistoflistings
+
+\listoftables
+\addchap{Anhang}
+
+
+\chapter*{Ehrenwörtliche Erklärungen}
+\addcontentsline{toc}{chapter}{Ehrenwörtliche Erklärung}
+
+
+Wir erklären ehrenwörtlich:
+\begin{enumerate}
+	\item dass wir unser Paper selbstständig verfasst habe,
+	\item dass wir die Übernahme wörtlicher Zitate aus der Literatur sowie die Verwendung der Gedanken anderer Autoren an den entsprechenden Stellen innerhalb der Arbeit gekennzeichnet habe,
+	\item dass wir unser Paper bei keiner anderen Prüfung vorgelegt haben.
+\end{enumerate}
+Wir sind uns bewusst, dass eine falsche Erklärung rechtliche Folgen haben wird.\\
+\\ \\
+\begin{tabular}{lp{2em}l} 
+ \hspace{4cm}   && \hspace{7cm} \\\cline{1-1}\cline{3-3} 
+ \small{Ort, Datum} && \small{Alexander Betke} \\
+ \\\\
+ \hspace{4cm}   && \hspace{7cm} \\\cline{1-1}\cline{3-3} 
+ \small{Ort, Datum} && \small{Maja Günther} \\
+ \\\\
+  \hspace{4cm}   && \hspace{7cm} \\\cline{1-1}\cline{3-3} 
+ \small{Ort, Datum} && \small{Theo Leuthardt} \\
+ \\\\
+  \hspace{4cm}   && \hspace{7cm} \\\cline{1-1}\cline{3-3} 
+ \small{Ort, Datum} && \small{Josh Nicolai Tischer} \\
+ \\\\
+  \hspace{4cm}   && \hspace{7cm} \\\cline{1-1}\cline{3-3} 
+ \small{Ort, Datum} && \small{Domenik Wilhelm} \\
+\end{tabular}
+
+\end{document}
