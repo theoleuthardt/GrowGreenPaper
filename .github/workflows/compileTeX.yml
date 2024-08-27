@@ -1,4 +1,4 @@
-name: Package Application with Pyinstaller
+name: Compile LaTeX
 
 on:
   push:
@@ -6,13 +6,13 @@ on:
   workflow_dispatch:
     inputs:
       create_release:
-        description: 'Create a GitHub release?'
-        required: true
-        default: 'no'
+        description: 'Alexx on top?'
+        required: false
+        default: 'YESSS'
         type: choice
         options:
-          - 'yes'
-          - 'no'
+          - 'YESSS'
+          - 'nuUh!'
 
 jobs:
   build:
