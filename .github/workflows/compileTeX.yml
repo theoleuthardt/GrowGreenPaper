@@ -26,8 +26,18 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      #- name: Upload PDF file
-      #  uses: actions/upload-artifact@v4
-      #  with:
-      #    name: PDF
-      #    path: main.pdf
+          args: "-synctex=1 -interaction=nonstopmode -file-line-error -recorder"
+          compiler: pdflatex
+          texlive_version: 2024
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF
+          path: main.pdf
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: true
+          files: main.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
