@@ -18,7 +18,7 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 3. Ziele                        |                                      | ❌    |
 | 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    |
 | 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ❌    |
-| 6. Aufwände                     | Plaaufwände + Istzahlen (bis 29.10.) | ❌    |
+| 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ❌    |
 | 7. Produktstruktur              |                                      | ❌    |
 | 8. Herausforderungen & Lösungen | Selbstreflexion                      | ❌    |
 | 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |
