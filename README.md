@@ -9,7 +9,21 @@ Related Software Project for this paper: [GrowGreen](https://github.com/AlexInAB
 
 ## Chapter Progress
 
-
+| Chapter                      | Specified Criteria (if given)        | Done |
+| ---------------------------- | ------------------------------------ | ---- |
+| Kurzbeschreibung             | 1 A4 Seite                           | ✅    |
+| Projektsteckbrief            |                                      | ✅    |
+| Ziele                        |                                      | ❌    |
+| Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    |
+| Risikomanagement             |                                      | ❌    |
+| Aufwände                     |                                      | ❌    |
+| Produktstruktur              |                                      | ❌    |
+| Herausforderungen & Lösungen | Selbstreflexion                      | ❌    |
+| UML: Anwendungsfalldiagramm  |                                      | ❌    |
+| UML: Aktivitätsdiagramm      |                                      | ❌    |
+| Qualitätskriterien           | Liste von 15 – 25 Qualitätskriterien | ❌    |
+| Technologien & Produkte      |                                      | ❌    |
+| Verwendungsanleitung Lösung  |                                      | ❌    |
 
 ## Authors
 
