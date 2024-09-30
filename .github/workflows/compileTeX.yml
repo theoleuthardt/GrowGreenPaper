@@ -26,9 +26,6 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-          args: "-synctex=1 -interaction=nonstopmode -file-line-error -recorder"
-          compiler: pdflatex
-          texlive_version: 2024
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
