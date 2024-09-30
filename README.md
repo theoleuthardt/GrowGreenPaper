@@ -6,6 +6,7 @@ This paper will be created as a pdf using LaTeX and will be compiled as a releas
 The deadline for submission is 05.11.24.
 
 Related Software Project for this paper: [GrowGreen](https://github.com/AlexInABox/grow-green/)
+
 Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.php/4270794/mod_resource/content/0/Vorgabe%20Pr%C3%BCfungsleistungen%20SWE%20I%202024%20V1.1.pdf)
 
 ## Chapter Progress
