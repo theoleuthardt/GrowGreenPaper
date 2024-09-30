@@ -9,21 +9,21 @@ Related Software Project for this paper: [GrowGreen](https://github.com/AlexInAB
 
 ## Chapter Progress
 
-| Chapter                      | Specified Criteria (if given)        | Done |
-| ---------------------------- | ------------------------------------ | ---- |
-| Kurzbeschreibung             | 1 A4 Seite                           | ✅    |
-| Projektsteckbrief            |                                      | ✅    |
-| Ziele                        |                                      | ❌    |
-| Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    |
-| Risikomanagement             |                                      | ❌    |
-| Aufwände                     |                                      | ❌    |
-| Produktstruktur              |                                      | ❌    |
-| Herausforderungen & Lösungen | Selbstreflexion                      | ❌    |
-| UML: Anwendungsfalldiagramm  |                                      | ❌    |
-| UML: Aktivitätsdiagramm      |                                      | ❌    |
-| Qualitätskriterien           | Liste von 15 – 25 Qualitätskriterien | ❌    |
-| Technologien & Produkte      |                                      | ❌    |
-| Verwendungsanleitung Lösung  |                                      | ❌    |
+| Chapter                         | Specified Criteria (if given)        | Done |
+| ------------------------------- | ------------------------------------ | ---- |
+| 1. Kurzbeschreibung             | 1 A4 Seite                           | ✅    |
+| 2. Projektsteckbrief            |                                      | ✅    |
+| 3. Ziele                        |                                      | ❌    |
+| 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    |
+| 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ❌    |
+| 6. Aufwände                     | Plaaufwände + Istzahlen (bis 29.10.) | ❌    |
+| 7. Produktstruktur              |                                      | ❌    |
+| 8. Herausforderungen & Lösungen | Selbstreflexion                      | ❌    |
+| 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |
+| 10. UML: Aktivitätsdiagramm     |                                      | ❌    |
+| 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    |
+| 12. Technologien & Produkte     |                                      | ❌    |
+| 13. Verwendungsanleitung Lösung |                                      | ❌    |
 
 ## Authors
 
