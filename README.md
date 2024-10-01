@@ -11,21 +11,21 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 
 ## Chapter Progress
 
-| Chapter                         | Specified Criteria (if given)        | Done |
-| ------------------------------- | ------------------------------------ | ---- |
-| 1. Kurzbeschreibung             | 1 A4 Seite                           | ✅    |
-| 2. Projektsteckbrief            |                                      | ✅    |
-| 3. Ziele                        |                                      | ❌    |
-| 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    |
-| 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ❌    |
-| 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ❌    |
-| 7. Produktstruktur              |                                      | ❌    |
-| 8. Herausforderungen & Lösungen | Selbstreflexion                      | ❌    |
-| 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |
-| 10. UML: Aktivitätsdiagramm     |                                      | ❌    |
-| 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    |
-| 12. Technologien & Produkte     |                                      | ❌    |
-| 13. Verwendungsanleitung Lösung |                                      | ❌    |
+| Chapter                         | Specified Criteria (if given)        | Done |  TODO                                                    |
+| ------------------------------- | ------------------------------------ | ---- | -------------------------------------------------------- |
+| 1. Kurzbeschreibung             | 1 A4 Seite                           | ✅    |                                                          |
+| 2. Projektsteckbrief            |                                      | ❌    | Tabelle nachbearbeiten in Latex formatieren              |
+| 3. Ziele                        |                                      | ❌    | Tabelle besprechen und in Latex formatieren              |
+| 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    |                                                          |
+| 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ❌    |                                                          |
+| 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ❌    |                                                          |
+| 7. Produktstruktur              |                                      | ❌    | Strukturplan aus Excalidraw einfügen mit Einleitungstext |
+| 8. Herausforderungen & Lösungen | Selbstreflexion                      | ❌    |                                                          |
+| 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |                                                          |
+| 10. UML: Aktivitätsdiagramm     |                                      | ❌    |                                                          |
+| 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    |                                                          |
+| 12. Technologien & Produkte     |                                      | ❌    |                                                          |
+| 13. Verwendungsanleitung Lösung |                                      | ❌    |                                                          |
 
 ## Authors
 
