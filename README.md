@@ -14,9 +14,9 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | Chapter                         | Specified Criteria (if given)        | Done |  TODO                                                    |
 | ------------------------------- | ------------------------------------ | ---- | -------------------------------------------------------- |
 | 1. Kurzbeschreibung             | 1 A4 Seite                           | ✅    |                                                          |
-| 2. Projektsteckbrief            |                                      | ❌    | Tabelle nachbearbeiten in Latex formatieren              |
+| 2. Projektsteckbrief            |                                      | ❌    | Tabelle nachbearbeiten in Latex einfügen                 |
 | 3. Ziele                        |                                      | ❌    | Tabelle besprechen und in Latex formatieren              |
-| 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    |                                                          |
+| 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ❌    | Tabellen besprechen und in Latex formatieren             |
 | 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ❌    |                                                          |
 | 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ❌    |                                                          |
 | 7. Produktstruktur              |                                      | ❌    | Strukturplan aus Excalidraw einfügen mit Einleitungstext |
