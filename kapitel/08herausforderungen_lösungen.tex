@@ -1,11 +1,60 @@
 \chapter{Herausforderungen und Lösungen}\label{ch:herausforderungen}
+% Projektthema und Technologieauswahl
 Die erste Herausforderungen zu Beginn des Projekts bestand für das Team darin, das sich auf ein Thema und eine Stilart
 geeinigt wurde, da verschiedene Erfahrungs- und Wissensstände der Teammitglieder zu Projektideen mit unterschiedlichen 
 Schwierigkeitsstufen geführt hätten. 
 So wurde beschlossen, ein 2D-Pixelart-Spiel zu entwickeln, anstatt von der 3D-Spieleentwicklung Gebrauch zu machen, weil 
-nur ein Teammitglied damit Erfahrung besaß und die Entwicklung eines solchen Spiels mit zugehörigen Texturen und Modellen
+nur Josh damit Erfahrung besaß und die Entwicklung eines solchen Spiels mit zugehörigen Texturen und Modellen
 eine zu hohen zeitlichen Aufwand dargestellt hätte. 
 Entscheidend war zudem die umfangreiche Recherche zur Auswahl der Engine zur Entwicklung des Spiels. 
 Kriterien dafür waren eine hoffentlich steile Lernkurve mit dem Engine-Editor, die Möglichkeit zur Programmierung mit 
 weitläufig verbreiteten Programmiersprache und eine gute Dokumentation zur effizienteren Einarbeitung und Beseitigung
 von Fehlern. 
+Mit der Nutzung der Open-Source-Engine GODOT und der Programmiersprache C\# wurden alle der geforderten 
+Kriterien erfüllt, die für die Entwicklung des Projekts erforderlich sind. \\
+\newline
+% Frontend
+Beim Frontend des Spiels lief der Entwicklungsprozess relativ reibungslos ab unter anderem durch den nutzerfreundlichen 
+GODOT-Editor.
+Viel mehr kamen Schwierigkeiten auf durch das Verwenden und Manipulieren von Objekten aus Godot in C\#.
+In jeder Szene des Spiels existiert eine Hierarchie der sich darin befindenden Objekte, die die Struktur der Szene
+darstellen. 
+Bei dem Versuch zum Beispiel das Spiel zu schließen, wenn im Titelmenü der Ausschaltbutton gedrückt wird, muss im 
+zugewiesenen Skript das Spiel geschlossen werden. 
+Nur stellte sich die Frage, wie wir in C\# auf die Godot-Objekte zugreifen können. 
+Durch die integrierte Godot-System-Klasse kann auf die zuvor genannte Hierarchie zugegriffen werden über relative Pfade
+und so als verwendbares Objekt manipuliert werden kann oder wie im genannten Beispiel das Spiel durch einen 
+systemspezifischen Befehl geschlossen werden kann.\\
+\newline
+% Backend
+Damit während des Spielens die Daten des Nutzers und alle Pflanzendaten nicht beim Schließen des Spiels 
+verloren gehen, entstand das Problem der Datenspeicherung mithilfe eines Backends. 
+Möglich wäre die Nutzung von verschiedenste Backed-Frameworks gewesen wie ASP .NET oder gängige 
+Datenbank-Wrapper-Systeme mit Javascript oder Java wie NodeJS oder Spring-Boot.
+Da wir aber kein großes Spiel mit Skalierbarkeit entwickeln werden, ist es am effizientesten eine Datenbank in SQL zu 
+definieren und das Wrapper-System in C\# direkt zu implementieren. 
+Zusätzlicher Vorteil dabei war die Erfahrung von Alex und Maja bezüglich Datenbanken, was zu einer zügigen Entwicklung
+des Backends führte.\\
+\newline
+% Charaterauswahl
+In Verbindung mit dem Backend erwies es sich als etwas schwieriger, die Charakterauswahl aus dem Titelmenü in anderen
+Spielszenen zu speichern und demnach die Identifizierung der Auswahl.
+Als Lösung wurde jedem Charakter eine ID zugeordnet, die in der Datenbank gespeichert wird und bei benötigtem Aufruf
+in der jeweiligen Klasse durch den Datenbank-Wrapper geladen wird.
+Die Assets der Charaktere enthalten ihre ID im Dateinamen, wodurch das Laden über GODOT deutlich vereinfacht ist. \\
+\newline
+% Organisation
+Im generellen Sinne kamen die meisten Probleme in der Organisation der Entwicklung und Zusammenarbeit auf. 
+Unter anderem regelmäßig Termine zu finden für Besprechungen außerhalb der Vorlesungen und einen einheitlichen
+Kommunikationskanal zu haben, damit Vorstellungen zur Entwicklung des Spiels jedes Gruppenmitglieds global in der Gruppe
+bekannt sind.
+Zudem fehlte es anfangs, dass jeder über seine Aufgaben und Pflichten Bescheid weiß, was zu ineffizienter Arbeitsweise 
+führte.
+Um einen geordneten Entwicklungsprozess zu erhalten, entschieden wir uns Aufgaben und die Zuweisung von Bearbeitern 
+in der Gruppe über ein Github-Kanban-System zu lösen.
+Darin kann jedes Gruppenmitglied Issues erstellen, also sprich Aufgaben, die Features des Spiels oder ähnliche 
+projektbezogene To-dos darstellen und Gruppenmitgliedern zugewiesen werden können.
+Über die Kommentarfunktion innerhalb der Issues kann auch ein Austausch zu Problemen stattfinden,
+wodurch die Kommunikation nicht nur auf die Besprechungen begrenzt ist.
+Stellt ein Gruppenmitglied seine Aufgabe fertig, trägt jener seine benötigte Zeit in einer Excel-Tabelle ein, damit
+die Arbeitszeit am Projekt verfolgt werden kann.
