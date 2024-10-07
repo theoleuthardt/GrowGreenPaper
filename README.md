@@ -20,7 +20,7 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ❌    |                                                          |
 | 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ❌    |                                                          |
 | 7. Produktstruktur              |                                      | ✅    | Strukturplan aus Excalidraw einfügen mit Einleitungstext |
-| 8. Herausforderungen & Lösungen | Selbstreflexion                      | ❌    |                                                          |
+| 8. Herausforderungen & Lösungen | Selbstreflexion                      | ✅    |                                                          |
 | 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |                                                          |
 | 10. UML: Aktivitätsdiagramm     |                                      | ❌    |                                                          |
 | 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    |                                                          |
