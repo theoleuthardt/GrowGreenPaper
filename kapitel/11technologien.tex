@@ -6,23 +6,75 @@ Im Folgenden werden die verwendeten Technologien näher erläutert. \\
 % Godot & C#
 Zur Entwicklung des Spiels ist die initiale Auswahl der Engine sehr bedeutend. 
 Wir haben uns für die Engine Godot in der 4.\ Version entschieden, da es sich um ein Open-Source-Projekt der Godot 
-Foundation handelt und damit die Anforderung der Kostenfreiheit erfüllt.
-Durch die Unterstützung der Programmiersprache C\#, neben der Godot-spezifischen Skriptsprache, stand Godot im Vergleich
-zu anderen Engines nicht schlechter da und biete die Möglichkeit bisher erworbenes Wissen aus dem letzten Semester in 
-objektorientierter Programmierung anwenden und erweitern zu können.
+Foundation handelt und damit die Anforderung der Kostenfreiheit erfüllt wird.
+Durch die Unterstützung der Programmiersprache C\#, neben der Godot-spezifischen Skriptsprache GDScript, stand Godot 
+im Vergleich zu anderen Engines nicht schlechter da und biete die Möglichkeit bisher erworbenes Wissen aus dem 
+letzten Semester in objektorientierter Programmierung anwenden und erweitern zu können.
 Zum leichteren Debugging sollte unsere verwendete Engine eine gute Dokumentation haben, was Godot für seine aktuelle 
 Version in großen Umfang pflegt und ebenfalls ein entscheidendes Kriterium darstellte.
 Zudem bietet Godot eine hohe Kompatibilität an bezüglich des späteren Exports des Spiels, womit das Spiel im 
-Deployment für alle großen Betriebssysteme exportiert werden kann. \\
+Deployment für alle gängigen Betriebssysteme exportiert werden kann. \\
+\newline
+% IDE
+Als Entwicklungsumgebung wird in Verbindung mit dem Godot-Editor der Code-Editor Visual Studio Code verwendet, da
+dieser sich besser eignet als der Godot-Editor durch Debugging-Tools, besseres Syntax-Highlighting und syntaktische
+Code-Vervollständigung.
+Visual Studio Code ist außerdem kostenfrei und bietet eine Vielzahl an Erweiterungen, die das Entwickeln des Spiels
+vereinfacht mit Funktionen wie zum Beispiel Syntax-Highlighting für Godot-spezifische Dateien oder die Unterstützung der
+Programmiersprache C\#.
+Alternativ nutzen auch manche Gruppenmitglieder, die IDE Rider vom Unternehmen Jetbrains.
+Die Lizenz für eine Auswahl an IDEs dieses Unternehmens kann kostenlos von Studenten erworben werden, womit die Nutzung
+von Rider keinen finanziellen Mehraufwand darstellen würde.
+Rider unterstützt alle Funktionalitäten von Visual Studio Code und beinhaltet weitere Tools, wodurch es weder einen
+Vorteil, noch einen Nachteil darstellt, welcher der beiden Umgebungen genutzt wird.\\
 \newline
 % SQL
 Für das Backend kommt SQL zum Einsatz in Form einer Datenbank.
 Dies stellt für uns die einfachste Möglichkeit dar, Daten verständlich zu speichern, ohne ein großes Backendframework
 lernen zu müssen und damit einen größeren Zeitaufwand zu haben. 
-Ebenfalls kann wie bei C\# aus den vergangenen Semestern gelerntes Wissen angewendet werden und somit zusätzliche 
-Mehrarbeit vermieden werden.
-% IDE
-% Git & Github
-% Github Actions
+Ebenfalls kann wie bei C\# aus den vergangenen Semestern gelerntes Wissen angewendet und somit zusätzliche 
+Mehrarbeit vermieden werden. \\
+\newline
+% Git & Github (Versionierung)
+Damit wir als Gruppe gemeinsam an der Software arbeiten können, wird Git als Version-Control-System verwendet.
+Git ist ein Open-Source-Programm, das die Versionsverwaltung von Dateien und Projekten ermöglicht.
+Durch die Verwendung von Git können Änderungen des entsprechenden Bearbeiters nachvollzogen und bei Bedarf rückgängig 
+gemacht werden.
+So arbeitet jeder Entwickler auf seinem eigenen Branch und kann Features darin abgetrennt vom Main-Branch 
+implementieren.
+Wird ein Feature fertiggestellt, fügt der Entwickler seinen Branch zum Main-Branch hinzu und gegebenenfalls werden
+in diesem Prozess noch Konflikte gelöst, die dabei auftreten könnten.
+Github erweitert Git als Cloud-basierte Plattform die Versionierung um weitere Projektmanagement-Tools, wie zum
+Beispiel ein Kanban-Board für TO-DOs und Issues, sowie Projektdokumentation und CI/CD-Features über Actions. 
+Dadurch, dass Github dies kostenlos anbietet, wurde schnell entschlossen die Versionierung und das Deployment mit Github
+zu realisieren.\\
+\newline
+% Github Actions (Deployment)
+Für das Deployment des Spiels wird Github Actions verwendet, da es sich um eine integrierte CI/CD-Lösung handelt, die
+kostenfrei von Github angeboten wird.
+Die Idee den Deploymentprozess des Spiels wurde umgesetzt nach dem Gedanken nicht jedes Mal manuell auf einem der 
+Entwicklersysteme aus der Engine heraus das Spiel exportieren und veröffentlichen zu müssen.
+Über selbst erstellte Workflows können Bearbeiter des Github-Projekts Prozesse automatisieren wie in unserem Fall das
+Deployment. 
+Dabei wird bei jeder Änderung der Main-Branch ein neuer Build des Spiels erstellt für alle unterstützten 
+Betriebssysteme und ein Release, der auf der Github-Seite des Projekts veröffentlicht wird mit einer Liste der 
+Änderungen und einer automatisch generierten Versionsnummer.\\
+\newline
 % Pixilart (Assets pixeln)
-% Latex
+Damit Grow Green einen einheitlichen Stil besitzt, wurde innerhalb der Gruppe zu Beginn des Projekts entschieden eigene
+Assets beziehungsweise Texturen für das Spiel zu erstellen.
+Für die Erstellung der Assets wird die Webseite Pixilart verwendet, da sie eine einfache und kostenfreie Möglichkeit
+bietet, Pixel-Art-Texturen zu designen.
+Die Webseite enthält eine Vielzahl an Tools wie zum Beispiel eine Farbpalette, verschiedene
+Pinsel und Ebenen damit Designer effizient zum Beispiel Kontraste erstellen können.
+Die Assets werden direkt auf der Webseite vom Designer erstellt und exportiert, was die Erstellung von eigenen
+Spieltexturen vereinfacht und einen effizienten Erstellungsprozess ermöglicht.\\
+\newline
+% Latex (Paper)
+Das zugehörige Paper wird in \LaTeX{}geschrieben, da es sich um ein Open-Source-Textsatzsystem handelt, das die
+Erstellung von Dokumenten erleichtert.
+Da innerhalb der Gruppe die Praxistransferberichte der letzten Semester größtenteils in \LaTeX{}geschrieben wurden,
+konnten die Gruppenmitglieder auf bereits erworbenes Wissen zurückgreifen und somit den Arbeitsaufwand für das Schreiben
+des Papers reduzieren.
+Über ein separates Github Repository wird das Paper versioniert und ebenfalls über Github Actions automatisiert 
+kompiliert und veröffentlicht mit entsprechender Versionsnummer.
