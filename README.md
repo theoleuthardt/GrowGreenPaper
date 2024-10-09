@@ -24,7 +24,7 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |                                                          |
 | 10. UML: Aktivitätsdiagramm     |                                      | ❌    |                                                          |
 | 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    |                                                          |
-| 12. Technologien & Produkte     |                                      | ❌    |                                                          |
+| 12. Technologien & Produkte     |                                      | ✅    |                                                          |
 | 13. Verwendungsanleitung Lösung |                                      | ❌    |                                                          |
 
 ## Authors
