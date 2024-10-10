@@ -17,9 +17,9 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 2. Projektsteckbrief            |                                      | ✅    | Tabelle nachbearbeiten in Latex einfügen                 |
 | 3. Ziele                        |                                      | ✅    | Tabelle besprechen und in Latex formatieren              |
 | 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ✅    | Tabellen besprechen und in Latex formatieren             |
-| 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ❌    |                                                          |
+| 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ✅    | Matrix einfügen und Register in Anhang packen (verlinken)|
 | 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ❌    |                                                          |
-| 7. Produktstruktur              |                                      | ✅    | Strukturplan aus Excalidraw einfügen mit Einleitungstext |
+| 7. Produktstruktur              |                                      | ✅    | Strukturplan aus Excalidraw einfügen                     |
 | 8. Herausforderungen & Lösungen | Selbstreflexion                      | ✅    |                                                          |
 | 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |                                                          |
 | 10. UML: Aktivitätsdiagramm     |                                      | ❌    |                                                          |
