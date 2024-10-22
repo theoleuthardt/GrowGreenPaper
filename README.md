@@ -21,8 +21,8 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ✅    | Tabelle in Latex formatieren                             |
 | 7. Produktstruktur              |                                      | ✅    |                                                          |
 | 8. Herausforderungen & Lösungen | Selbstreflexion                      | ✅    |                                                          |
-| 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |                                                          |
-| 10. UML: Aktivitätsdiagramm     |                                      | ❌    |                                                          |
+| 9. UML: Anwendungsfalldiagramm  |                                      | ❌    | Fließtexte only für die Beschreibungen (KEINE Tabellen)  |
+| 10. UML: Aktivitätsdiagramm     |                                      | ❌    | Fließtexte only für die Beschreibungen (KEINE Tabellen)  |
 | 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    | Tabelle überarbeiten in Excel                            |
 | 12. Technologien & Produkte     |                                      | ✅    |                                                          |
 | 13. Verwendungsanleitung Lösung |                                      | ❌    |                                                          |
