@@ -25,7 +25,7 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 10. UML: Aktivitätsdiagramm     |                                      | ❌    | Fließtexte only für die Beschreibungen (KEINE Tabellen)     |
 | 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    | Tabelle überarbeiten in Excel                               |
 | 12. Technologien & Produkte     |                                      | ✅    |                                                             |
-| 13. Verwendungsanleitung Lösung |                                      | ❌    |                                                             |
+| 13. Verwendungsanleitung Lösung |                                      | ❌    | Schreiben nach Präsi bei 1.0 Version                        |
 
 ## Authors
 
