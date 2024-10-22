@@ -18,12 +18,12 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 3. Ziele                        |                                      | ✅    | Messkriterien beenden                                    |
 | 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ✅    |                                                          |
 | 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ✅    | Matrix einfügen & Anhang (verlinken) (Maja)              |
-| 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ❌    | Tabelle in Latex formatieren                             |
-| 7. Produktstruktur              |                                      | ✅    | Strukturplan aus Excalidraw einfügen                     |
+| 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ✅    | Tabelle in Latex formatieren                             |
+| 7. Produktstruktur              |                                      | ✅    | Strukturplan überarbeiten                                |
 | 8. Herausforderungen & Lösungen | Selbstreflexion                      | ✅    |                                                          |
 | 9. UML: Anwendungsfalldiagramm  |                                      | ❌    |                                                          |
 | 10. UML: Aktivitätsdiagramm     |                                      | ❌    |                                                          |
-| 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    |                                                          |
+| 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    | Produktstrukturplan benötigt                             |
 | 12. Technologien & Produkte     |                                      | ✅    |                                                          |
 | 13. Verwendungsanleitung Lösung |                                      | ❌    |                                                          |
 
