@@ -33,6 +33,8 @@
 \useunder{\uline}{\ul}{}
 \usepackage{wrapfig}
 
+\usepackage{longtable}
+
 \usepackage{makecell}
 \usepackage{comment}
 \renewcommand{\familydefault}{\sfdefault} %%SCHRIFTART
@@ -135,8 +137,8 @@
 }
     
 
-\renewcommand\lstlistingname{Codeausschnitt}
-\renewcommand\lstlistlistingname{Codeverzeichnis}
+\renewcommand\lstlistingname{Anhang}
+\renewcommand\lstlistlistingname{Anhangverzeichnis}
 
 \geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2.3cm} 
 
@@ -204,7 +206,7 @@
 \loadglsentries{glossar.tex}
 
 \newcommand{\type}{Software Engineering I - Paper}
-\newcommand{\topic}{Grow Green}
+\newcommand{\topic}{\textbf{Grow Green}}
 \newcommand{\subtopic}{Ein Pixelart-Pflanzenpflege-Spiel}
 \newcommand{\Alex}{Alexander Betke (77203378972)}
 \newcommand{\Maja}{Maja Günther (72205653284)}
@@ -253,7 +255,7 @@
 	\textbf{\normalsize{Fachbereich:}} & \normalsize{\fachbereich} \tabularnewline
 	\textbf{\normalsize{Studiengang:}} & \normalsize{\studiengang} \tabularnewline
 	\textbf{\normalsize{Betreuerin Hochschule:}} & \normalsize{\betreuerHS} \tabularnewline
-    \textbf{\normalsize{Anzahl der Wörter:}} & \normalsize{\wordCount} \tabularnewline
+    \tabularnewline
     \tabularnewline
     \tabularnewline
 	\end{tabular}
@@ -307,11 +309,11 @@
 
 \pagenumbering{Alph}
 \include{kapitel/anhang}
-
+\normalsize
 
 \listoffigures
 \listoftables
-
+\include{kapitel/anhang}
 
 \chapter*{Ehrenwörtliche Erklärungen}
 \addcontentsline{toc}{chapter}{Ehrenwörtliche Erklärung}
