@@ -16,16 +16,16 @@ Specified Criteria: [Moodle Document](https://moodle.hwr-berlin.de/pluginfile.ph
 | 1. Kurzbeschreibung             | 1 A4 Seite                           | ✅    |                                                             |
 | 2. Projektsteckbrief            |                                      | ✅    |                                                             |
 | 3. Ziele                        |                                      | ✅    |                                                             |
-| 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ✅    | Verantwortlichkeitstabelle bearbeiten (pro Rolle nur einer) |
-| 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ✅    | Matrix einfügen & Anhang (verlinken) (Maja)                 |
-| 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ✅    | Tabelle in Latex formatieren                                |
+| 4. Projektteam & Rollen         | inkl. Rollen & Verantwortlichkeiten  | ✅    |                                                             |
+| 5. Risikomanagement             | Register + Matrix, min. 7 Risiken    | ✅    |                                                             |
+| 6. Aufwände                     | Planaufwände + Istzahlen (bis 29.10.)| ✅    |                                                             |
 | 7. Produktstruktur              |                                      | ✅    |                                                             |
 | 8. Herausforderungen & Lösungen | Selbstreflexion                      | ✅    |                                                             |
-| 9. UML: Anwendungsfalldiagramm  |                                      | ❌    | Fließtexte only für die Beschreibungen (KEINE Tabellen)     |
-| 10. UML: Aktivitätsdiagramm     |                                      | ❌    | Fließtexte only für die Beschreibungen (KEINE Tabellen)     |
-| 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ❌    | Tabelle überarbeiten in Excel                               |
+| 9. UML: Anwendungsfalldiagramm  |                                      | ✅    |                                                             |
+| 10. UML: Aktivitätsdiagramm     |                                      | ✅    |                                                             |
+| 11. Qualitätskriterien          | Liste von 15 – 25 Qualitätskriterien | ✅    |                                                             |
 | 12. Technologien & Produkte     |                                      | ✅    |                                                             |
-| 13. Verwendungsanleitung Lösung |                                      | ❌    | Schreiben nach Präsi bei 1.0 Version                        |
+| 13. Verwendungsanleitung Lösung |                                      | ✅    |                                                             |
 
 ## Authors
 
