@@ -30,22 +30,71 @@ Personenzuweisung, der Schätzung in Stunden, dem Realaufwand in Stunden und der
 Realaufwand.
 Das Vorzeichen der Differenz gibt Auskunft darüber, ob sich über- oder unterschätzt wurde.
 Dabei ist ein positives Vorzeichen eine Überschätzung und ein negatives Vorzeichen eine Unterschätzung.\\
-\newline
-% Tabelle hier so:
-% Tabelle hihihihihihi \\
-% \newline
 \newpage
+% Tabelle hier so:
+\begin{table}[H]\label{tab:aufwand}
+    \small
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        Position & Verantwortlicher & Schätzung & Real & Abweichung \\[0.5ex]
+        \hline\hline
+        \textbf{Konzeptionierung} & & \textbf{36} & \textbf{38} & \textbf{2} \\
+        \hline
+        Ideenfindung & 1,2,3,4,5 & 2 & 4 & 2 \\
+        Produktstrukturplan & 1,2,3,4,5 & 3 & 3 & 0 \\
+        Produktstruktur Flussplan & 1,2,3,4,5 & 1 & 1 & 0 \\
+        Risikomanagement & 1,2,3,4,5 & 6 & 8 & 2 \\
+        Skills aneignen & 1,2,3,4,5 & 24 & 22 & -2 \\
+        \hline
+        \textbf{Realisierung} & & \textbf{269} & \textbf{227,5} & \textbf{-46,5} \\
+        \hline
+        Dokumentation (Paper) & 2,3 & 40 & 47 & 7 \\
+        Anwenderdoku (Anleitung) & 3 & 2 & 0,5 & -1,5 \\
+        Entwicklerdoku (Kanban) & 1,5 & 7 & 5 & -2 \\
+        Programmierung & 1,3,4,5 & 200 & 150 & -50 \\
+        Design der Pflanzenassets & 2 & 10 & 10 & 0 \\
+        Design weiterer Grafiken & 2 & 10 & 15 & 5 \\
+        \hline
+        \textbf{Test und Qualitätssicherung} & & \textbf{19} & \textbf{16} & \textbf{-3} \\
+        \hline
+        Entwicklertest & 1,3,4,5 & 15 & 13 & -2 \\
+        Performancetest & 1,3 & 4 & 3 & -1 \\
+        \hline
+        \textbf{Go-Live} & & \textbf{10,5} & \textbf{7,5} & \textbf{-3} \\
+        \hline
+        Deployment & 1,3 & 10 & 7 & -3 \\
+        Admin Einweisung & 1,3 & 0,5 & 0,5 & 0 \\
+        \hline
+        \textbf{Meetings} & & \textbf{45} & \textbf{35} & \textbf{-10} \\
+        \hline
+        Meetings zu fünft & 1,2,3,4,5 & 15 & 10 & -5 \\
+        Hilfe untereinander & 1,2,3,4,5 & 30 & 25 & -5 \\
+        \hline
+        \textbf{Projektmanagement} & & \textbf{10} & \textbf{15} & \textbf{5} \\
+        \hline
+        Konkretisierung der Idee & 1,2,3,4,5 & 5 & 10 & 5 \\
+        Kontrolle und Wartung der Tabellen & 5 & 5 & 5 & 0 \\
+        \hline
+        \textbf{Risiko} & & \textbf{40} & \textbf{20} & \textbf{-20} \\
+        \hline
+        Minispiele & 1,4,5 & 30 & 15 & -15 \\
+        Pflanzenvielfalt & 2 & 10 & 5 & -5 \\
+        \hline
+        \textbf{Gesamt} & & \textbf{429,5} & \textbf{359} & \textbf{70,5} \\
+        \hline
+    \end{tabular}
+    \caption{Aufwandsschätzung}
+\end{table}
 In der Realität haben wir uns bei unseren Aufwänden in allen Bereichen überschätzt, also wir mussten weniger
 Zeitaufwand investieren als ursprünglich geschätzt. 
-Von der Sicht des Projektstarts ist das aber auch plausibel, denn die vorhandenen Herausforderungen aus Kapitel
-~\ref{ch:herausforderungen}bezüglich der Programmierung und Aneignung von Kenntnissen zu Engine und Programmiersprache
-sahen größer aus als sie in der Umsetzung waren.
-Ebenfalls wurde der Workload von der Erstellung des Papers überschätzt, da zwar schon frühzeitig bekannt war es in Latex
-zu erstellen, sich aber die Erarbeitung durch Arbeitsteilung der Paperautoren als weniger aufwändig herausstellte und 
-die Menge der Texte einen kleineren Anteil des Papers darstellte als ursprünglich angenommen.
+Von der Sicht des Projektstarts ist das aber plausibel, denn die vorhandenen Herausforderungen aus Kapitel
+~\ref{ch:herausforderungen} bezüglich der Programmierung und Aneignung von Kenntnissen zu Engine und Programmiersprache
+wirkten zeitaufwändiger als sie eigentlich waren.
+Ebenfalls wurde der Workload von der Erstellung des Papers überschätzt, da sich die Erarbeitung durch Arbeitsteilung 
+als weniger aufwändig herausstellte die Menge der Texte einen kleineren Anteil des Papers darstellte als die Tabellen.
 Implementierungen wie die Minispiele oder das Erstellen vieler Pflanzenassets für eine erhöhte Pflanzenvielfalt wurden 
 als Risiken eingestuft und somit als aufwändiger angenommen, als sie in der Realität waren. 
-Zur Risikobehandlung wurde die Minispielanzahl auf 1 bis 2 reduziert und nicht wie anfangs gedacht zum Beispiel auf 5 
+Zur Risikobehandlung wurde die Minispielanzahl reduziert und nicht wie anfangs gedacht zum Beispiel auf 5 
 festgelegt für mehr Spielvarietät, was den Aufwand und das Risiko erheblich reduzierte.
-Die Pflanzenassets wurden durch den Designer erweitert, was durch die Einarbeitung des Designers im Pixelart-Editor 
+Die Pflanzenassets wurden durch den Designer erweitert, was durch die Einarbeitung im Pixelart-Editor 
 nicht die erwartete Aufwandshöhe erreichte und damit genauso das Risiko minderte.\\ 
